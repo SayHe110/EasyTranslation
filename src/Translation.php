@@ -3,6 +3,7 @@
 namespace Sayhe110\Translation;
 
 use GuzzleHttp\Client;
+use Sayhe110\Translation\Exceptions\InvalidArgumentException;
 
 class Translation
 {
@@ -28,6 +29,10 @@ class Translation
 
     public function translation($text, $from = 'auto', $to = 'en', $canHttps = false)
     {
+        if(empty($text)){
+            throw new InvalidArgumentException('Invalid translation text');
+        }
+
         $url = $canHttps ?
             'http://api.fanyi.baidu.com/api/trans/vip/translate' :
             'https://fanyi-api.baidu.com/api/trans/vip/translate';
