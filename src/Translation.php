@@ -4,6 +4,8 @@ namespace Sayhe110\Translation;
 
 use GuzzleHttp\Client;
 use Sayhe110\Translation\Exceptions\InvalidArgumentException;
+use Sayhe110\Translation\Exceptions\HttpException;
+use Sayhe110\Translation\Handle\LanguageType;
 
 class Translation
 {
@@ -33,6 +35,14 @@ class Translation
             throw new InvalidArgumentException('Invalid translation text');
         }
 
+        //  检查翻译源语言是否在翻译范围之内
+        if($from != 'auto'){
+            (new LanguageType($from))->checkLanguage();
+        }
+
+        // 检查译文语言是否在翻译范围之内
+        (new LanguageType($to))->checkLanguage();
+
         $url = $canHttps ?
             'http://api.fanyi.baidu.com/api/trans/vip/translate' :
             'https://fanyi-api.baidu.com/api/trans/vip/translate';
@@ -51,11 +61,15 @@ class Translation
             'sign' => $sign,
         ]);
 
-        $response = $this->getHttpClient()->get($url, [
-            'query' => $query,
-        ])->getBody()->getContents();
+        try{
+            $response = $this->getHttpClient()->get($url, [
+                'query' => $query,
+            ])->getBody()->getContents();
 
-        // todo 先只返回 json
-        return \json_decode($response, true);
+            // todo 先只返回 json
+            return \json_decode($response, true);
+        } catch (\Exception $e) {
+            throw new HttpException($e->getMessage(), $e->getCode(), $e);
+        }
     }
 }
