@@ -1,0 +1,19 @@
+{
+    "name": "sayhe110/translation",
+    "description": "百度翻译SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sayhe110",
+            "email": "949426374@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sayhe110\\Translation\\": "./src/"
+        }
+    }
+}
