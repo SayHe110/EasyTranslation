@@ -1,13 +1,21 @@
 <?php
 
+/*
+ * This file is part of the sayhe110/translation
+ *
+ * (c) sayhe110 <949426374@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Sayhe110\Translation\Handle;
 
 use Sayhe110\Translation\Exceptions\InvalidArgumentException;
 
 /**
  * 处理 from/to 语言类型是否在翻译范围之内
- * Class LanguageType
- * @package Sayhe110\Translation\Handle
+ * Class LanguageType.
  */
 class LanguageType
 {
@@ -27,9 +35,10 @@ class LanguageType
 
     public function checkLanguage()
     {
-        if(! \in_array($this->language, $this->languages)){
+        if (!\in_array($this->language, $this->languages)) {
             throw new InvalidArgumentException('Translation language is not within the scope of translation.');
         }
+
         return;
     }
 }
