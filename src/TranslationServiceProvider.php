@@ -11,8 +11,7 @@ class TranslationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Translation::class, function(){
-            // return new Translation(config('services.translation.key'), config('services.translation.appid'));
-            return new Translation('9ulwF8alAWQ4bZCTrJTk', '20180124000118319');
+            return new Translation(config('services.translation.key'), config('services.translation.appid'));
         });
 
         $this->app->alias(Translation::class, 'translation');

@@ -31,7 +31,6 @@ class Translation
 
     public function translation($text, $from = 'auto', $to = 'en', $canHttps = false)
     {
-        var_dump($this->key, $this->appid);die;
         if(empty($text)){
             throw new InvalidArgumentException('Invalid translation text');
         }
