@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the sayhe110/translation
+ *
+ * (c) sayhe110 <949426374@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Sayhe110\Translation;
 
 use GuzzleHttp\Client;
@@ -10,7 +19,9 @@ use Sayhe110\Translation\Handle\LanguageType;
 class Translation
 {
     protected $key;
+
     protected $appid;
+
     protected $guzzleOptions = [];
 
     public function __construct(string $key, string $appid)
@@ -31,12 +42,12 @@ class Translation
 
     public function translation($text, $from = 'auto', $to = 'en', $canHttps = false)
     {
-        if(empty($text)){
+        if (empty($text)) {
             throw new InvalidArgumentException('Invalid translation text');
         }
 
         // 检查翻译源语言是否在翻译范围之内
-        if($from != 'auto'){
+        if ('auto' != $from) {
             (new LanguageType($from))->checkLanguage();
         }
 
@@ -61,7 +72,7 @@ class Translation
             'sign' => $sign,
         ]);
 
-        try{
+        try {
             $response = $this->getHttpClient()->get($url, [
                 'query' => $query,
             ])->getBody()->getContents();
