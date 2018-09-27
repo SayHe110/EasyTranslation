@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the sayhe110/translation
+ *
+ * (c) sayhe110 <949426374@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Sayhe110\Translation\Tests;
 
 use GuzzleHttp\Client;
@@ -49,7 +58,8 @@ class TranslationTest extends TestCase
 //    }
 
     /**
-     * 检查 text 参数
+     * 检查 text 参数.
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -67,7 +77,8 @@ class TranslationTest extends TestCase
     }
 
     /**
-     * 检查 from 参数
+     * 检查 from 参数.
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -85,7 +96,8 @@ class TranslationTest extends TestCase
     }
 
     /**
-     * 检查 to 参数
+     * 检查 to 参数.
+     *
      * @throws InvalidArgumentException
      * @throws HttpException
      */
@@ -103,7 +115,7 @@ class TranslationTest extends TestCase
     }
 
     /**
-     * time out
+     * time out.
      */
     public function testGetTranslationWithGuzzleRuntimeException()
     {
