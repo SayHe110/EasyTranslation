@@ -15,20 +15,20 @@ class TranslationTest extends TestCase
 {
     public function testGetHttpClient()
     {
-//        $translation = new Translation('mock-key', 'mock-appid');
-//        $this->assertInstanceOf(ClientInterface::class, $translation->getHttpClient());
+        $translation = new Translation('mock-key', 'mock-appid');
+        $this->assertInstanceOf(ClientInterface::class, $translation->getHttpClient());
     }
 
     public function testSetGuzzleOptions()
     {
-//        $translation = new Translation('mock-key', 'mock-appid');
-//        $this->assertNull($translation->getHttpClient()->getConfig('timeout'));
-//        $translation->setGuzzleOptions(['timeout' => 5000]);
-//        $this->assertSame(5000, $translation->getHttpClient()->getConfig('timeout'));
+        $translation = new Translation('mock-key', 'mock-appid');
+        $this->assertNull($translation->getHttpClient()->getConfig('timeout'));
+        $translation->setGuzzleOptions(['timeout' => 5000]);
+        $this->assertSame(5000, $translation->getHttpClient()->getConfig('timeout'));
     }
 
-    public function testGetTranslation()
-    {
+//    public function testGetTranslation()
+//    {
 //        $response = new Response(200, [], '{"success": true}');
 //
 //        $client = \Mockery::mock(Client::class);
@@ -44,9 +44,9 @@ class TranslationTest extends TestCase
 //
 //        $translation = \Mockery::mock(Translation::class, ['mock-key', 'mock-appid'])->makePartial();
 //        $translation->allows()->getHttpClient()->andReturn($client);
-//        var_dump($translation);die;
+//
 //        $this->assertSame(['success' => true], $translation->translation('我要翻译这段话。。。'));
-    }
+//    }
 
     /**
      * 检查 text 参数

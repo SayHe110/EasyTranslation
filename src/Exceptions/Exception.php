@@ -1,6 +1,6 @@
 <?php
 
-namespace Sayhe110\Translation\Exceptions;
+namespace Sayhe110\Weather\Exceptions;
 
 class Exception extends \Exception
 {

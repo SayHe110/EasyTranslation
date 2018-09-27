@@ -13,7 +13,7 @@ class Translation
     protected $appid;
     protected $guzzleOptions = [];
 
-    public function __construct($key, $appid)
+    public function __construct(string $key, string $appid)
     {
         $this->key = $key;
         $this->appid = $appid;
@@ -31,11 +31,12 @@ class Translation
 
     public function translation($text, $from = 'auto', $to = 'en', $canHttps = false)
     {
+        var_dump($this->key, $this->appid);die;
         if(empty($text)){
             throw new InvalidArgumentException('Invalid translation text');
         }
 
-        //  检查翻译源语言是否在翻译范围之内
+        // 检查翻译源语言是否在翻译范围之内
         if($from != 'auto'){
             (new LanguageType($from))->checkLanguage();
         }

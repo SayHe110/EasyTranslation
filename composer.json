@@ -17,5 +17,12 @@
         "psr-4": {
             "Sayhe110\\Translation\\": "./src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sayhe110\\Translation\\TranslationServiceProvider"
+            ]
+        }
     }
 }
