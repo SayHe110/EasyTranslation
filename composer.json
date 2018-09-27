@@ -11,7 +11,8 @@
     "require": {
         "guzzlehttp/guzzle": "^6.3",
         "mockery/mockery": "^1.1",
-        "phpunit/phpunit": "~5"
+        "phpunit/phpunit": "~5",
+        "sayhe110/translation": "^0.0.1"
     },
     "autoload": {
         "psr-4": {
