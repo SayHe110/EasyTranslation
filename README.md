@@ -45,14 +45,14 @@ translation($text, $from, $to, $canHttps)
 > - `$to` - 目标译文语言类型，默认为：`en`
 > - `$canHttps` - 是否使用 `https` 进行请求
 
-#### 具体翻译语言范围
-参考 [百度翻译开放平台 通用翻译API技术文档](http://api.fanyi.baidu.com/api/trans/product/apidoc)
+#### 具体翻译语言范以及字段说明
+请阅读 [百度翻译开放平台 通用翻译API技术文档](http://api.fanyi.baidu.com/api/trans/product/apidoc)
 
 ### 在 Laravel 中使用
 
 ```shell
 $ composer require sayhe110/translation -vvv
-```
+``` 
 
 在 `config/services.php` 中:
 ```php
@@ -91,7 +91,7 @@ MIT
 - [超哥的天气SDK](https://github.com/overtrue/weather)
 
 ### Todo
-- [ ] 添加2-3家翻译平台，放置一家服务挂了，导致 SDK 不能够使用
+- [ ] 添加2-3家翻译平台，防止一家服务挂了，导致 SDK 不能够使用
 
 ### Other
 若在使用中有什么疑问或者发现有什么问题，欢迎提交 `issues`, 或者 `PR`
