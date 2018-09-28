@@ -1,8 +1,5 @@
-# translation
-
-[![Build Status](https://travis-ci.org/SayHe110/translation.svg?branch=master)](https://travis-ci.org/SayHe110/translation)
-![StyleCI build status](https://github.styleci.io/repos/150516140/shield) 
-
+# EasyTranslation
+ 
 ## 安装
 
 ```shell
@@ -83,8 +80,6 @@ public function translation()
     return app('translation')->translation('我要翻译这段话。。。');
 }
 ```
-## License
-MIT
 
 ### 参考
 - [百度翻译开发平台](http://api.fanyi.baidu.com/api/trans/product/index)
@@ -95,3 +90,6 @@ MIT
 
 ### Other
 若在使用中有什么疑问或者发现有什么问题，欢迎提交 `issues`, 或者 `PR`
+
+## License
+MIT
