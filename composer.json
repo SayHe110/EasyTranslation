@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sayhe110\\Translation\\": "./src/"
+            "Sayhe110\\EasyTranslation\\": "./src/"
         }
     },
     "extra": {
