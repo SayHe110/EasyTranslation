@@ -1,5 +1,5 @@
 {
-    "name": "sayhe110/easyTranslation",
+    "name": "sayhe110/easy-translation",
     "description": "百度翻译SDK",
     "license": "MIT",
     "authors": [
@@ -11,8 +11,7 @@
     "require": {
         "guzzlehttp/guzzle": "^6.3",
         "mockery/mockery": "^1.1",
-        "phpunit/phpunit": "~5",
-        "sayhe110/translation": "^0.0.1"
+        "phpunit/phpunit": "~5"
     },
     "autoload": {
         "psr-4": {
