@@ -86,6 +86,8 @@ public function translation()
 - [超哥的天气SDK](https://github.com/overtrue/weather)
 
 ### Todo
+- [ ] 添加 pinyin SDK
+- [ ] 增加翻译多种方式：`I WANT TO TEANSLATE THIS PASSAGE.`, `I-want-to-translate-this-passage.`,`I Want To Translate This Passage.`
 - [ ] 添加2-3家翻译平台，防止一家服务挂了，导致 SDK 不能够使用
 
 ### Other
