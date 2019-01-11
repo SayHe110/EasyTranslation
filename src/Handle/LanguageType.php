@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Sayhe110\Translation\Handle;
+namespace Sayhe110\EasyTranslation\Handle;
 
-use Sayhe110\Translation\Exceptions\InvalidArgumentException;
+use Sayhe110\EasyTranslation\Exceptions\InvalidArgumentException;
 
 /**
  * 处理 from/to 语言类型是否在翻译范围之内

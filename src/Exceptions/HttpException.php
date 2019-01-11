@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Sayhe110\Translation\Exceptions;
+namespace Sayhe110\EasyTranslation\Exceptions;
 
 class HttpException extends Exception
 {

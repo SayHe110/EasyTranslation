@@ -1,5 +1,5 @@
 {
-    "name": "sayhe110/translation",
+    "name": "sayhe110/easyTranslation",
     "description": "百度翻译SDK",
     "license": "MIT",
     "authors": [
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sayhe110\\Translation\\TranslationServiceProvider"
+                "Sayhe110\\EasyTranslation\\TranslationServiceProvider"
             ]
         }
     }

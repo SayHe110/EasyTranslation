@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Sayhe110\Translation;
+namespace Sayhe110\EasyTranslation;
 
 use GuzzleHttp\Client;
-use Sayhe110\Translation\Exceptions\InvalidArgumentException;
-use Sayhe110\Translation\Exceptions\HttpException;
-use Sayhe110\Translation\Handle\LanguageType;
+use Sayhe110\EasyTranslation\Exceptions\InvalidArgumentException;
+use Sayhe110\EasyTranslation\Exceptions\HttpException;
+use Sayhe110\EasyTranslation\Handle\LanguageType;
 
 class Translation
 {
