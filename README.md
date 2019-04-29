@@ -9,14 +9,17 @@ $ composer require sayhe110/easy-translation
 ## 使用
 
 ```php
+require __DIR__.'/vendor/autoload.php';
+
 use Sayhe110\Translation\Translation;
 
 $key = 'XXXXXXXXXXXXXXXXXXXXXXXX';
 $appid = 'XXXXXXXXXXXXXXXXXXXXXXXX';
 
 $translation = new Translation($key, $appid);
-
 $result = $translation->translation('我要翻译这段话');
+
+print_r($result);
 ```
 
 ### 示例
@@ -66,7 +69,7 @@ TRANSLATION_APPID=XXXXXXXXXXXXXXXXXXXXXXXX
 #### 示例
 ##### 方法参数注入
 ```php
-use Sayhe110\Translation\Translation;
+use Sayhe110\EasyTranslation\Translation;
 
 public function translation(Translation $translation)
 {
