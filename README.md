@@ -3,7 +3,7 @@
 ## 安装
 
 ```shell
-$ composer require sayhe110/translation -vvv
+$ composer require sayhe110/easy-translation
 ```
 
 ## 使用
