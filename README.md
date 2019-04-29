@@ -88,11 +88,6 @@ public function translation()
 - [百度翻译开发平台](http://api.fanyi.baidu.com/api/trans/product/index)
 - [超哥的天气SDK](https://github.com/overtrue/weather)
 
-### Todo
-- [ ] 添加 pinyin SDK
-- [ ] 增加翻译多种方式：`I WANT TO TEANSLATE THIS PASSAGE.`, `I-want-to-translate-this-passage.`,`I Want To Translate This Passage.`
-- [ ] 添加2-3家翻译平台，防止一家服务挂了，导致 SDK 不能够使用
-
 ### Other
 若在使用中有什么疑问或者发现有什么问题，欢迎提交 `issues`, 或者 `PR`
 
