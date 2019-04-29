@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of the sayhe110/translation
+ *
+ * (c) sayhe110 <949426374@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Sayhe110\EasyTranslation\Support;
 
 use ArrayAccess;
 
-class config implements arrayaccess
+class Config implements arrayaccess
 {
     protected $config = [];
 
@@ -14,15 +23,19 @@ class config implements arrayaccess
     }
 
     /**
-     * Whether a offset exists
-     * @link https://php.net/manual/en/arrayaccess.offsetexists.php
+     * Whether a offset exists.
+     *
+     * @see https://php.net/manual/en/arrayaccess.offsetexists.php
+     *
      * @param mixed $offset <p>
-     * An offset to check for.
-     * </p>
-     * @return boolean true on success or false on failure.
-     * </p>
-     * <p>
-     * The return value will be casted to boolean if non-boolean was returned.
+     *                      An offset to check for.
+     *                      </p>
+     *
+     * @return bool true on success or false on failure.
+     *              </p>
+     *              <p>
+     *              The return value will be casted to boolean if non-boolean was returned.
+     *
      * @since 5.0.0
      */
     public function offsetExists($offset)
@@ -31,12 +44,16 @@ class config implements arrayaccess
     }
 
     /**
-     * Offset to retrieve
-     * @link https://php.net/manual/en/arrayaccess.offsetget.php
+     * Offset to retrieve.
+     *
+     * @see https://php.net/manual/en/arrayaccess.offsetget.php
+     *
      * @param mixed $offset <p>
-     * The offset to retrieve.
-     * </p>
-     * @return mixed Can return all value types.
+     *                      The offset to retrieve.
+     *                      </p>
+     *
+     * @return mixed can return all value types
+     *
      * @since 5.0.0
      */
     public function offsetGet($offset)
@@ -45,15 +62,17 @@ class config implements arrayaccess
     }
 
     /**
-     * Offset to set
-     * @link https://php.net/manual/en/arrayaccess.offsetset.php
+     * Offset to set.
+     *
+     * @see https://php.net/manual/en/arrayaccess.offsetset.php
+     *
      * @param mixed $offset <p>
-     * The offset to assign the value to.
-     * </p>
-     * @param mixed $value <p>
-     * The value to set.
-     * </p>
-     * @return void
+     *                      The offset to assign the value to.
+     *                      </p>
+     * @param mixed $value  <p>
+     *                      The value to set.
+     *                      </p>
+     *
      * @since 5.0.0
      */
     public function offsetSet($offset, $value)
@@ -64,12 +83,14 @@ class config implements arrayaccess
     }
 
     /**
-     * Offset to unset
-     * @link https://php.net/manual/en/arrayaccess.offsetunset.php
+     * Offset to unset.
+     *
+     * @see https://php.net/manual/en/arrayaccess.offsetunset.php
+     *
      * @param mixed $offset <p>
-     * The offset to unset.
-     * </p>
-     * @return void
+     *                      The offset to unset.
+     *                      </p>
+     *
      * @since 5.0.0
      */
     public function offsetUnset($offset)
