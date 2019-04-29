@@ -1,10 +1,10 @@
 {
     "name": "sayhe110/easy-translation",
-    "description": "百度翻译SDK",
+    "description": "Easy Translation SDK",
     "license": "MIT",
     "authors": [
         {
-            "name": "sayhe110",
+            "name": "LeiJian",
             "email": "949426374@qq.com"
         }
     ],
